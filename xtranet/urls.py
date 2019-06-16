@@ -2,7 +2,7 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
-import jobs.views
+import front_page.views
 
 
 urlpatterns = [
@@ -11,4 +11,4 @@ urlpatterns = [
     path('blog/', include('blog.urls')),
     path('jobs/', include('jobs.urls')),
     path('snippets/', include('snippets.urls')),
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+] #+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
