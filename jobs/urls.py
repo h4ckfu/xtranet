@@ -1,0 +1,1 @@
+urlpatterns = [path('', views.all_jobs, name = 'all_jobs'),]
