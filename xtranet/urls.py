@@ -11,4 +11,4 @@ urlpatterns = [
     path('blog/', include('blog.urls')),
     path('jobs/', include('jobs.urls')),
     path('snippets/', include('snippets.urls')),
-] #+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
